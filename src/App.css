@@ -1,0 +1,23 @@
+.minute-hand {
+  height: 1px;
+  width: 50px;
+}
+
+.visible-hand {
+  border: 1px solid black;
+  width: 26px;
+}
+
+.non-visible-hand {
+  width: 24px;
+}
+
+.clock {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid black;
+}
