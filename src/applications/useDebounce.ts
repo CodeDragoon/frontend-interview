@@ -1,31 +1,34 @@
 // delay execution until sometime has passed
 
-import { useEffect, useRef, useState } from "react"
+import {
+    useEffect,
+    useState
+} from "react"
 
 
-type DebounceProps = {
+
+
+function useDebounce<X>({ delay, val }: {
     delay: number;
-    str: string;
-}
-
-const useDebounce = ({ delay, str }: DebounceProps) => {
+    val: X;
+}): X {
 
 
-    const [text, setText] = useState(str);
+    const [value, setValue] = useState(val);
 
 
     useEffect(() => {
         const tid = setTimeout(() => {
-            setText(str)
+            setValue(val)
         }, delay)
 
         return () => {
             clearTimeout(tid)
         }
-    }, [str])
+    }, [val])
 
 
-    return text;
+    return value;
 
 }
 
