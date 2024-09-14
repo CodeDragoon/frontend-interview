@@ -12,13 +12,20 @@ const Contact = ({ iName, iAge }: { iName: string, iAge: number }) => {
     }
 
 
+    console.log(!termsChecked)
+
+
     return <div>
-        <input placeholder='name' value={name} onChange={(e) => {
-            setName(e.target.value);
-        }} />
-        <input placeholder='age' value={age} onChange={(e) => {
-            setAge(e.target.value);
-        }} />
+        <div>
+            <input placeholder='name' value={name} onChange={(e) => {
+                setName(e.target.value);
+            }} />
+        </div>
+        <div>
+            <input placeholder='age' value={age} onChange={(e) => {
+                setAge(e.target.value);
+            }} />
+        </div>
 
         <div>
             <div>Person Details</div>
@@ -32,7 +39,7 @@ const Contact = ({ iName, iAge }: { iName: string, iAge: number }) => {
 
         <div>
             <input type='checkbox' onChange={(e) => {
-                setTermsChecked(e.target.value)
+                setTermsChecked(e.target.checked)
             }} />
             <label>Terms & Agreement</label>
 
