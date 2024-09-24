@@ -1,9 +1,21 @@
-import Todo from "./applications/Todo"
+import Search from "./Search"
+
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
+
 
 
 function App() {
+
+
   return <div>
-    <Todo />
+    <QueryClientProvider client={queryClient}>
+
+      <Search />
+    </QueryClientProvider>
+
+
   </div>
 }
 
