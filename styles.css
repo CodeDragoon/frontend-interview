@@ -1,0 +1,29 @@
+#test {
+    color: magenta;
+}
+
+.a {
+    color: aquamarine;
+    /* 0 0 1 0 */
+}
+
+.b {
+    color: yellow;
+}
+
+.b .a {
+    color: cadetblue;
+    /* 0 0 2 0 */
+}
+
+.c {
+    color: maroon;
+    /* 0 0 1 0 */
+}
+
+
+#test2 {
+    border: 1px solid blueviolet;
+    color: brown;
+    font-size: 32px;
+}
