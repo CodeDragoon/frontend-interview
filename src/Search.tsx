@@ -72,7 +72,7 @@ const Search = () => {
                 school ? <div style={{
                     border: '1px solid black'
                 }}>
-                    --
+                    -------
 
                 </div> : null
             }

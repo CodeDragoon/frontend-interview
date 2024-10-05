@@ -27,3 +27,15 @@
     color: brown;
     font-size: 32px;
 }
+
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.image-container {
+    width: 100px;
+    height: 100px;
+    filter: blur(8px);
+}
