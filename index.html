@@ -10,14 +10,15 @@
 </head>
 
 <body>
+  <div>This is nice</div>
   <link rel='preload' href="./core.ts" />
   <link rel='preload' href="./one.js" />
   <div id="root">
   </div>
   <link rel="stylesheet" href="./styles.css" />
 
-  <script async src="./core.ts"></script>
-  <script async src="./one.js"></script>
+  <script type="module" async src="./core.ts"></script>
+  <script type="module" async src="./one.js"></script>
   <script type="module" src="/src/main.tsx"></script>
 
 

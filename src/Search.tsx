@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import useDebounceHook from "./useDebounceHook";
 import { useQuery } from '@tanstack/react-query';
 import React from "react";
