@@ -1,4 +1,4 @@
-import Search from "./Search"
+import Search from "./applications/Search"
 
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 
